@@ -94,14 +94,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../gis-cert-2.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
-        <div class="sidebar-tools-collapse">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -149,8 +154,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#install-utm-with-windows-11-for-arm-preview" id="toc-install-utm-with-windows-11-for-arm-preview" class="nav-link active" data-scroll-target="#install-utm-with-windows-11-for-arm-preview">Install UTM with Windows 11 for ARM Preview</a></li>
-  <li><a href="#install-.net-sdk-6.0-x64" id="toc-install-.net-sdk-6.0-x64" class="nav-link" data-scroll-target="#install-.net-sdk-6.0-x64">Install .NET SDK 6.0 (x64)</a></li>
+  <li><a href="#install-utm" id="toc-install-utm" class="nav-link active" data-scroll-target="#install-utm">Install UTM</a></li>
+  <li><a href="#download-windows-11-for-arm-preview-vhdx" id="toc-download-windows-11-for-arm-preview-vhdx" class="nav-link" data-scroll-target="#download-windows-11-for-arm-preview-vhdx">Download Windows 11 for ARM Preview VHDX</a></li>
+  <li><a href="#install-a-new-virtual-machine-with-windows-11-for-arm-preview" id="toc-install-a-new-virtual-machine-with-windows-11-for-arm-preview" class="nav-link" data-scroll-target="#install-a-new-virtual-machine-with-windows-11-for-arm-preview">Install a New Virtual Machine with Windows 11 for ARM Preview</a></li>
   <li><a href="#install-arcgis-pro" id="toc-install-arcgis-pro" class="nav-link" data-scroll-target="#install-arcgis-pro">Install ArcGIS Pro</a></li>
   </ul>
 </nav>
@@ -177,31 +183,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="install-utm-with-windows-11-for-arm-preview" class="level2">
-<h2 class="anchored" data-anchor-id="install-utm-with-windows-11-for-arm-preview">Install UTM with Windows 11 for ARM Preview</h2>
+<section id="install-utm" class="level2">
+<h2 class="anchored" data-anchor-id="install-utm">Install UTM</h2>
 <ol type="1">
 <li><p>Download UTM from <a href="https://mac.getutm.app" target="_blank">https://mac.getutm.app</a>, or install it from the Mac App Store at <a href="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817" target="_blank">https://apps.apple.com/us/app/utm-virtual-machines/id1538878817</a>. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.</p>
 <ul>
 <li>If you install from the direct download, open the <code>UTM.dmg</code> disk image file that was downloaded, and drag <code>UTM.app</code> into the Applications folder.</li>
 </ul></li>
-<li><p>Open <code>UTM.app</code>, and click the <code>+</code> sign at the top of the window to install a new virtual machine.</p></li>
-<li><p>Select “Virtualize”.</p></li>
-<li><p>Select “Windows”</p></li>
-<li><p>Select the “Import VHDX Image” checkbox, and click the “Download Windows 11 for ARM64 Preview VHDX” link. This will open a new window at <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64" target="_blank">https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64</a>.</p>
+</ol>
+</section>
+<section id="download-windows-11-for-arm-preview-vhdx" class="level2">
+<h2 class="anchored" data-anchor-id="download-windows-11-for-arm-preview-vhdx">Download Windows 11 for ARM Preview VHDX</h2>
+<ol type="1">
+<li><p>Navigate to <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64" target="_blank">https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64</a>.</p></li>
+<li><p>Sign into <code>microsoft.com</code> in the upper right corner of the page using your <code>first.last@umt.edu</code> user ID.</p>
 <ul>
-<li>Sign into <code>microsoft.com</code> in the upper right corner of the page using your <code>first.last@umt.edu</code> user ID.</li>
 <li>If you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.
 <ul>
 <li>Navigate to <a href="https://www.microsoft.com/en-us/windowsinsider/register" target="_blank">https://www.microsoft.com/en-us/windowsinsider/register</a>.</li>
 <li>Read through the notices, and select the “I accept the terms of this agreement” check box.</li>
 <li><strong>Click “Register now”.</strong></li>
-<li>Return to the UTM window and click the “Download Windows 11 for ARM64 Preview VHDX” again, or navigate to <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64" target="_blank">https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64</a>.</li>
+<li>Return <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64" target="_blank">https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64</a> to continue.</li>
 </ul></li>
-<li>You should be on a page entitled “Windows Insider Preview Downloads”. Click the dropdown menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. <strong>Click “Confirm”.</strong></li>
-<li>A new dropdown will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. <strong>Click “Confirm”.</strong></li>
-<li>A download link for the Windows VHDX should appear. <strong>Click “Download Now”.</strong> The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.</li>
 </ul></li>
-<li><p>Once the Windows 11 for ARM64 Preview VHDX image is downloaded on your computer, return to UTM, click the “Browse…” button, and navigate to the download VHDX image. <strong>Click “Continue”.</strong></p></li>
+<li><p>You should be on a page entitled “Windows Insider Preview Downloads”. Click the dropdown menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. <strong>Click “Confirm”.</strong></p></li>
+<li><p>A new dropdown will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. <strong>Click “Confirm”.</strong></p></li>
+<li><p>A download link for the Windows VHDX should appear. <strong>Click “Download Now”.</strong> The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.</p></li>
+</ol>
+</section>
+<section id="install-a-new-virtual-machine-with-windows-11-for-arm-preview" class="level2">
+<h2 class="anchored" data-anchor-id="install-a-new-virtual-machine-with-windows-11-for-arm-preview">Install a New Virtual Machine with Windows 11 for ARM Preview</h2>
+<ol type="1">
+<li><p>Open <code>UTM.app</code>, and click the <code>+</code> sign at the top of the window to install a new virtual machine.</p></li>
+<li><p>Select “Virtualize”.</p></li>
+<li><p>Select “Windows”</p></li>
+<li><p>Select the “Import VHDX Image” check box.</p></li>
+<li><p>Click the “Browse…” button, and navigate to the downloaded Windows 11 VHDX image. <strong>Click “Continue”.</strong></p></li>
 <li><p>Select the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. <strong>Click “Continue”.</strong></p></li>
 <li><p>You may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. <strong>Click “Continue”.</strong></p></li>
 <li><p>Review the Summary, changing the Windows virtual machine’s name if you’d like, and <strong>click “Save”.</strong></p></li>
@@ -218,28 +235,9 @@ ul.task-list li input[type="checkbox"] {
 <li><p>At this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.</p></li>
 </ol>
 </section>
-<section id="install-.net-sdk-6.0-x64" class="level2">
-<h2 class="anchored" data-anchor-id="install-.net-sdk-6.0-x64">Install .NET SDK 6.0 (x64)</h2>
-<p>ArcGIS Pro requires .NET SDK 6.0 for x64 processors (<em>not</em> for ARM processors!). Follow these instructions to install the correct .NET SDK.</p>
-<ol type="1">
-<li><p>Open a browser and navigate to <a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0" target="_blank">https://dotnet.microsoft.com/en-us/download/dotnet/6.0</a>.</p></li>
-<li><p>You will see a grid of options for installing the .NET SDK. Under the “Installers” column and “Windows” row, click the “x86” link to begin the download.</p></li>
-<li><p>Navigate to the downloaded file, and double click to begin the installation process. Follow the instructions in the installer, accepting all defaults.</p></li>
-<li><p><strong>Restart the Windows VM.</strong></p></li>
-</ol>
-</section>
 <section id="install-arcgis-pro" class="level2">
 <h2 class="anchored" data-anchor-id="install-arcgis-pro">Install ArcGIS Pro</h2>
-<p>Log in to Windows 11, and follow these instructions:</p>
-<ol type="1">
-<li><p>Download the ArcGIS Pro installer.</p>
-<ul>
-<li>Navigate to <a href="https://umontana.maps.arcgis.com" target="_blank">https://umontana.maps.arcgis.com</a> and click “Sign In” in the upper right. You will be prompted to sign in with your UM NetID.</li>
-<li>Click your name in the upper right and go to My Settings &gt; Licenses. On the list of product licenses, you’ll see a Download link for ArcGIS Pro. Click it to start the download.</li>
-</ul></li>
-<li><p>Launch the downloaded installer, and follow the instructions to install ArcGIS Pro. Additional instructions are available here: <a href="https://umtqsg.atlassian.net/wiki/spaces/PUB/pages/1478754305/How+to+install+ArcGIS+Pro" target="_blank">https://umtqsg.atlassian.net/wiki/spaces/PUB/pages/1478754305/How+to+install+ArcGIS+Pro</a></p></li>
-<li><p>Once installed, launch ArcGIS Pro and activate following these instructions: <a href="https://umtqsg.atlassian.net/l/c/1X159Wf2" target="_blank">https://umtqsg.atlassian.net/l/c/1X159Wf2</a></p></li>
-</ol>
+<p>Continue your installation from within the new Windows Virtual Machine by following the <a href="../Installation/windows.html">Windows install instructions</a></p>
 
 
 </section>

@@ -6,6 +6,7 @@ website:
   sidebar:
     style: "docked"
     search: true
+    logo: gis-cert-2.jpg
     contents: auto
 
 format:
