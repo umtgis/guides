@@ -1,15 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "About"
-    ]
-  },
-  {
     "objectID": "Installation/mac_intel.html",
     "href": "Installation/mac_intel.html",
     "title": "MacOS (Intel)",
@@ -102,7 +92,7 @@
     "href": "Installation/mac_apple_silicon.html#install-arcgis-pro",
     "title": "MacOS (Apple Silicon)",
     "section": "Install ArcGIS Pro",
-    "text": "Install ArcGIS Pro\nContinue your installation from within the new Windows Virtual Machine by following the Windows install instructions",
+    "text": "Install ArcGIS Pro\nContinue your installation from within the new Windows Virtual Machine by following the Windows install instructions.",
     "crumbs": [
       "Installation",
       "MacOS (Apple Silicon)"
@@ -162,12 +152,5 @@
       "Installation",
       "Windows"
     ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "guides",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]

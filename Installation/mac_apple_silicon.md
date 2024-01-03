@@ -60,4 +60,4 @@ title: "MacOS (Apple Silicon)"
 
 ## Install ArcGIS Pro
 
-Continue your installation from within the new Windows Virtual Machine by following the [Windows install instructions](/Installation/windows.html)
+Continue your installation from within the new Windows Virtual Machine by following the [Windows install instructions](/Installation/windows.html).
