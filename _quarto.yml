@@ -10,12 +10,9 @@ website:
     contents:
       - section: "ArcGIS Pro Installation"
         contents: install/*
-    
 
 format:
   html:
-    theme:
-      light: flatly
     css: styles.css
     toc: true
 
