@@ -7,13 +7,15 @@ website:
     style: "docked"
     search: true
     logo: gis-cert-2.jpg
-    contents: auto
+    contents:
+      - section: "ArcGIS Pro Installation"
+        contents: install/*
+    
 
 format:
   html:
     theme:
       light: flatly
-      dark: darkly
     css: styles.css
     toc: true
 

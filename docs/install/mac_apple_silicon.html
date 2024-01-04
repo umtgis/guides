@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Windows</title>
+<title>MacOS (Apple Silicon)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,12 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Installation/mac_apple_silicon.html">Installation</a></li><li class="breadcrumb-item"><a href="../Installation/windows.html">Windows</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../install/mac_apple_silicon.html">ArcGIS Pro Installation</a></li><li class="breadcrumb-item"><a href="../install/mac_apple_silicon.html">MacOS (Apple Silicon)</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -98,9 +96,6 @@ ul.task-list li input[type="checkbox"] {
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../gis-cert-2.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -112,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Installation</span></a>
+ <span class="menu-text">ArcGIS Pro Installation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -120,19 +115,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Installation/mac_apple_silicon.html" class="sidebar-item-text sidebar-link">
+  <a href="../install/mac_apple_silicon.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MacOS (Apple Silicon)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Installation/mac_intel.html" class="sidebar-item-text sidebar-link">
+  <a href="../install/mac_intel.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MacOS (Intel)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Installation/windows.html" class="sidebar-item-text sidebar-link active">
+  <a href="../install/windows.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Windows</span></a>
   </div>
 </li>
@@ -148,19 +143,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#before-you-install" id="toc-before-you-install" class="nav-link active" data-scroll-target="#before-you-install">Before you Install:</a></li>
-  <li><a href="#install-.net-sdk-6.0-x64" id="toc-install-.net-sdk-6.0-x64" class="nav-link" data-scroll-target="#install-.net-sdk-6.0-x64">Install .NET SDK 6.0 (x64)</a></li>
+  <li><a href="#install-utm" id="toc-install-utm" class="nav-link active" data-scroll-target="#install-utm">Install UTM</a></li>
+  <li><a href="#download-windows-11-for-arm-preview-vhdx" id="toc-download-windows-11-for-arm-preview-vhdx" class="nav-link" data-scroll-target="#download-windows-11-for-arm-preview-vhdx">Download Windows 11 for ARM Preview VHDX</a></li>
+  <li><a href="#install-a-new-virtual-machine-with-windows-11-for-arm-preview" id="toc-install-a-new-virtual-machine-with-windows-11-for-arm-preview" class="nav-link" data-scroll-target="#install-a-new-virtual-machine-with-windows-11-for-arm-preview">Install a New Virtual Machine with Windows 11 for ARM Preview</a></li>
   <li><a href="#install-arcgis-pro" id="toc-install-arcgis-pro" class="nav-link" data-scroll-target="#install-arcgis-pro">Install ArcGIS Pro</a></li>
-  <li><a href="#activate-arcgis-pro" id="toc-activate-arcgis-pro" class="nav-link" data-scroll-target="#activate-arcgis-pro">Activate ArcGIS Pro</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Installation/mac_apple_silicon.html">Installation</a></li><li class="breadcrumb-item"><a href="../Installation/windows.html">Windows</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../install/mac_apple_silicon.html">ArcGIS Pro Installation</a></li><li class="breadcrumb-item"><a href="../install/mac_apple_silicon.html">MacOS (Apple Silicon)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Windows</h1>
+<h1 class="title">MacOS (Apple Silicon)</h1>
 </div>
 
 
@@ -177,47 +172,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="before-you-install" class="level2">
-<h2 class="anchored" data-anchor-id="before-you-install">Before you Install:</h2>
-<p><a href="https://arcgis.pro/arcgis-pro-system-requirements/">Check that you computer meets the minimum system requirements</a>. If you followed the instructions for setting up Windows using UTM in either MacOS (<a href="../Installation/mac_apple_silicon.html">Apple Silicon</a> or <a href="../Installation/mac_intel.html">Intel</a>), you should be good to go. <strong>Be sure you are working within your Windows virtual machine for the following steps.</strong></p>
+<section id="install-utm" class="level2">
+<h2 class="anchored" data-anchor-id="install-utm">Install UTM</h2>
+<p>UTM employs Apple’s Hypervisor virtualization framework to run other operating systems on Mac processors at near native speeds. It is a free alternative to virtualization software such as <a href="https://www.parallels.com" target="_blank">Parallels</a>, with impressive performance.</p>
+<p>There are three ways to install UTM:</p>
+<ul>
+<li>Download UTM from <a href="https://mac.getutm.app" target="_blank">https://mac.getutm.app</a>. Click the “Download” link. Open the <code>UTM.dmg</code> disk image file that was downloaded, and drag <code>UTM.app</code> into the Applications folder.</li>
+<li>Install UTM from the <a href="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817" target="_blank">Mac App Store</a>. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.</li>
+<li>If you use <a href="https://brew.sh" target="_blank">Homebrew</a> for app management on your Mac, install UTM via homebrew in Terminal: <code>brew install utm</code>.</li>
+</ul>
 </section>
-<section id="install-.net-sdk-6.0-x64" class="level2">
-<h2 class="anchored" data-anchor-id="install-.net-sdk-6.0-x64">Install .NET SDK 6.0 (x64)</h2>
-<p>ArcGIS Pro requires .NET SDK 6.0 for x64 processors. <strong>The presence of Microsoft .NET Desktop Runtime 7 or for any other architecture is inconsequential.</strong></p>
-<p>Follow these instructions to install the correct .NET SDK.</p>
+<section id="download-windows-11-for-arm-preview-vhdx" class="level2">
+<h2 class="anchored" data-anchor-id="download-windows-11-for-arm-preview-vhdx">Download Windows 11 for ARM Preview VHDX</h2>
 <ol type="1">
-<li><p>Open a browser and navigate to <a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0" target="_blank">https://dotnet.microsoft.com/en-us/download/dotnet/6.0</a>.</p></li>
-<li><p>You will see a grid of options for installing the .NET SDK. Under the “Installers” column and “Windows” row, click the “x64” link to begin the download.</p></li>
-<li><p>Navigate to the downloaded file, and double click to begin the installation process. Follow the instructions in the installer, accepting all defaults.</p></li>
-<li><p><strong>Restart the Windows VM.</strong></p></li>
+<li><p>Navigate to <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64" target="_blank">https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64</a>.</p></li>
+<li><p>Sign into <code>microsoft.com</code> in the upper right corner of the page using your <code>first.last@umt.edu</code> user ID.</p>
+<ul>
+<li>If you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.
+<ul>
+<li>Navigate to <a href="https://www.microsoft.com/en-us/windowsinsider/register" target="_blank">https://www.microsoft.com/en-us/windowsinsider/register</a>.</li>
+<li>Read through the notices, and select the “I accept the terms of this agreement” check box.</li>
+<li><strong>Click “Register now”.</strong></li>
+<li>Return <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64" target="_blank">https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64</a> to continue.</li>
+</ul></li>
+</ul></li>
+<li><p>You should be on a page entitled “Windows Insider Preview Downloads”. Click the drop down menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. <strong>Click “Confirm”.</strong></p></li>
+<li><p>A new drop down will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. <strong>Click “Confirm”.</strong></p></li>
+<li><p>A download link for the Windows VHDX should appear. <strong>Click “Download Now”.</strong> The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.</p></li>
+</ol>
+</section>
+<section id="install-a-new-virtual-machine-with-windows-11-for-arm-preview" class="level2">
+<h2 class="anchored" data-anchor-id="install-a-new-virtual-machine-with-windows-11-for-arm-preview">Install a New Virtual Machine with Windows 11 for ARM Preview</h2>
+<ol type="1">
+<li><p>Open <code>UTM.app</code>, and click the <code>+</code> sign at the top of the window to install a new virtual machine.</p></li>
+<li><p>Select “Virtualize”.</p></li>
+<li><p>Select “Windows”</p></li>
+<li><p>Select the “Import VHDX Image” check box.</p></li>
+<li><p>Click the “Browse…” button, and navigate to the downloaded Windows 11 VHDX image. <strong>Click “Continue”.</strong></p></li>
+<li><p>Select the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. <strong>Click “Continue”.</strong></p></li>
+<li><p>You may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. <strong>Click “Continue”.</strong></p></li>
+<li><p>Review the Summary, changing the Windows virtual machine’s name if you’d like, and <strong>click “Save”.</strong></p></li>
+<li><p>Your new Windows virtual machine should appear in the left column of the UTM window. Click the “play” button (the triangle) to launch the virtual machine. The machine should start up and begin the Windows installation process.</p></li>
+<li><p>Continue through the process of installing Windows in the virtual machine. You may encounter issues; the guide at <a href="https://docs.getutm.app/guides/windows/" target="_blank">https://docs.getutm.app/guides/windows/</a> may be useful. When installing on an M1 MacBook Pro, we ran into trouble with a network check during install. This can be solved by:</p>
+<ul>
+<li>Go to the language select screen (you may need to restart the setup if you are past this screen).</li>
+<li>Press <code>Shift + F10</code> to launch Command Prompt.</li>
+<li>Type in <code>OOBE\BYPASSNRO</code> and press Enter.</li>
+<li>Your VM should reboot and at the setup screen you should see an option for “I don’t have internet.” Click that, and then “Continue with limited setup,” and you should be able to continue with the installation.</li>
+</ul></li>
+<li><p>Once Windows starts, click the file explorer, and select the CD drive. Click the “spice-guest-tools” installer, which installs important drivers to run windows on a Mac. Reboot when prompted.</p></li>
+<li><p>You may want to adjust the video settings on your Windows VM. To do so, shut down the Windows VM, and in the UTM app, and then, with the Windows VM selected in the left hand menu, click the button that looks like three sliders in the upper right corner. Navigate down to “Display” and click the “Retina Mode” check box. Click “Save”, and restart the Windows VM. Resolution should be roughly double.</p></li>
+<li><p>At this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.</p></li>
 </ol>
 </section>
 <section id="install-arcgis-pro" class="level2">
 <h2 class="anchored" data-anchor-id="install-arcgis-pro">Install ArcGIS Pro</h2>
-<ol type="1">
-<li><p>Download the ArcGIS Pro installer.</p>
-<ul>
-<li>Navigate to <a href="https://umontana.maps.arcgis.com" target="_blank">https://umontana.maps.arcgis.com</a> and click “Sign In” in the upper right. You will be prompted to sign in with your UM NetID.</li>
-<li>Click your name in the upper right and go to My Settings &gt; Licenses. On the list of product licenses, you’ll see a Download link for ArcGIS Pro. Click it to start the download.</li>
-</ul></li>
-<li><p>Launch the downloaded installer, and follow the on-screen instructions to install ArcGIS Pro.</p></li>
-</ol>
-</section>
-<section id="activate-arcgis-pro" class="level2">
-<h2 class="anchored" data-anchor-id="activate-arcgis-pro">Activate ArcGIS Pro</h2>
-<ol type="1">
-<li>Launch ArcGIS Pro</li>
-</ol>
-<p><img src="blob:https://umtqsg.atlassian.net/41a9dac5-0fc0-47d5-9d75-069e9bacf1b3.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li><p>At the sign on page, click Your Organization’s URL</p></li>
-<li><p>In the empty field, enter <strong>umontana</strong> so the URL completes to <a href="https://umontana.maps.arcgis.com" target="_blank">umontana.maps.arcgis.com</a></p></li>
-</ol>
-<p><strong>DO NOT ENTER anything other than “umontana”</strong></p>
-<ol start="4" type="1">
-<li><p>Click <strong>Continue</strong>, then click the <strong>UM NetID</strong> button.</p></li>
-<li><p>Sign in with your NetID and password at the UM NetID SSO page</p></li>
-</ol>
+<p>Continue your installation from within the new Windows Virtual Machine by following the <a href="../Installation/windows.html">Windows install instructions</a>.</p>
 
 
 </section>
@@ -243,150 +253,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

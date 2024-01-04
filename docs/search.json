@@ -1,155 +1,166 @@
 [
   {
-    "objectID": "Installation/mac_intel.html",
-    "href": "Installation/mac_intel.html",
+    "objectID": "install/mac_intel.html",
+    "href": "install/mac_intel.html",
     "title": "MacOS (Intel)",
     "section": "",
-    "text": "Download UTM from https://mac.getutm.app, or install it from the Mac App Store at https://apps.apple.com/us/app/utm-virtual-machines/id1538878817. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\n\nIf you install from the direct download, open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.\n\nOpen UTM.app, and click the + sign at the top of the window to install a new virtual machine.\nSelect “Virtualize”.\nSelect “Windows”\nSelect the “Import VHDX Image” checkbox, and click the “Download Windows 11 for ARM64 Preview VHDX” link. This will open a new window at https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64.\n\nSign into microsoft.com in the upper right corner of the page using your first.last@umt.edu user ID.\nIf you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.\n\nNavigate to https://www.microsoft.com/en-us/windowsinsider/register.\nRead through the notices, and select the “I accept the terms of this agreement” check box.\nClick “Register now”.\nReturn to the UTM window and click the “Download Windows 11 for ARM64 Preview VHDX” again, or navigate to https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64.\n\nYou should be on a page entitled “Windows Insider Preview Downloads”. Click the dropdown menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. Click “Confirm”.\nA new dropdown will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. Click “Confirm”.\nA download link for the Windows VHDX should appear. Click “Download Now”. The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.\n\nOnce the Windows 11 for ARM64 Preview VHDX image is downloaded on your computer, return to UTM, click the “Browse…” button, and navigate to the download VHDX image. Click “Continue”.\nSelect the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. Click “Continue”.\nYou may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. Click “Continue”.\nReview the Summary, changing the Windows virtual machine’s name if you’d like, and click “Save”.\nYour new Windows virtual machine should appear in the left column of the UTM window. Click the “play” button (the triangle) to launch the virtual machine. The machine should start up and begin the Windows installation process.\nContinue through the process of installing Windows in the virtual machine. You may encounter issues; the guide at https://docs.getutm.app/guides/windows/ may be useful. When installing on an M1 MacBook Pro, we ran into trouble with a network check during install. This can be solved by:\n\nGo to the language select screen (you may need to restart the setup if you are past this screen).\nPress Shift + F10 to launch Command Prompt.\nType in OOBE\\BYPASSNRO and press Enter.\nYour VM should reboot and at the setup screen you should see an option for “I don’t have internet.” Click that, and then “Continue with limited setup,” and you should be able to continue with the installation.\n\nOnce Windows starts, click the file explorer, and select the CD drive. Click the “spice-guest-tools” installer, which installs important drivers to run windows on a Mac. Reboot when prompted.\nYou may want to adjust the video settings on your Windows VM. To do so, shut down the Windows VM, and in the UTM app, and then, with the Windows VM selected in the lefthand menu, click the button that looks like three sliders in the upper right corner. Navigate down to “Display” and click the “Retina Mode” checkbox. Click “Save”, and restart the Windows VM. Resolution should be roughly double.\nAt this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.",
+    "text": "UTM employs Apple’s Hypervisor virtualization framework to run other operating systems on Mac processors at near native speeds. It is a free alternative to virtualization software such as Parallels, with impressive performance.\nThere are three ways to install UTM:\n\nDownload UTM from https://mac.getutm.app. Click the “Download” link. Open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.\nInstall UTM from the Mac App Store. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\nIf you use Homebrew for app management on your Mac, install UTM via homebrew in Terminal: brew install utm.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Intel)"
     ]
   },
   {
-    "objectID": "Installation/mac_intel.html#install-utm-with-windows-11-for-arm-preview",
-    "href": "Installation/mac_intel.html#install-utm-with-windows-11-for-arm-preview",
+    "objectID": "install/mac_intel.html#install-utm",
+    "href": "install/mac_intel.html#install-utm",
     "title": "MacOS (Intel)",
     "section": "",
-    "text": "Download UTM from https://mac.getutm.app, or install it from the Mac App Store at https://apps.apple.com/us/app/utm-virtual-machines/id1538878817. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\n\nIf you install from the direct download, open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.\n\nOpen UTM.app, and click the + sign at the top of the window to install a new virtual machine.\nSelect “Virtualize”.\nSelect “Windows”\nSelect the “Import VHDX Image” checkbox, and click the “Download Windows 11 for ARM64 Preview VHDX” link. This will open a new window at https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64.\n\nSign into microsoft.com in the upper right corner of the page using your first.last@umt.edu user ID.\nIf you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.\n\nNavigate to https://www.microsoft.com/en-us/windowsinsider/register.\nRead through the notices, and select the “I accept the terms of this agreement” check box.\nClick “Register now”.\nReturn to the UTM window and click the “Download Windows 11 for ARM64 Preview VHDX” again, or navigate to https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64.\n\nYou should be on a page entitled “Windows Insider Preview Downloads”. Click the dropdown menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. Click “Confirm”.\nA new dropdown will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. Click “Confirm”.\nA download link for the Windows VHDX should appear. Click “Download Now”. The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.\n\nOnce the Windows 11 for ARM64 Preview VHDX image is downloaded on your computer, return to UTM, click the “Browse…” button, and navigate to the download VHDX image. Click “Continue”.\nSelect the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. Click “Continue”.\nYou may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. Click “Continue”.\nReview the Summary, changing the Windows virtual machine’s name if you’d like, and click “Save”.\nYour new Windows virtual machine should appear in the left column of the UTM window. Click the “play” button (the triangle) to launch the virtual machine. The machine should start up and begin the Windows installation process.\nContinue through the process of installing Windows in the virtual machine. You may encounter issues; the guide at https://docs.getutm.app/guides/windows/ may be useful. When installing on an M1 MacBook Pro, we ran into trouble with a network check during install. This can be solved by:\n\nGo to the language select screen (you may need to restart the setup if you are past this screen).\nPress Shift + F10 to launch Command Prompt.\nType in OOBE\\BYPASSNRO and press Enter.\nYour VM should reboot and at the setup screen you should see an option for “I don’t have internet.” Click that, and then “Continue with limited setup,” and you should be able to continue with the installation.\n\nOnce Windows starts, click the file explorer, and select the CD drive. Click the “spice-guest-tools” installer, which installs important drivers to run windows on a Mac. Reboot when prompted.\nYou may want to adjust the video settings on your Windows VM. To do so, shut down the Windows VM, and in the UTM app, and then, with the Windows VM selected in the lefthand menu, click the button that looks like three sliders in the upper right corner. Navigate down to “Display” and click the “Retina Mode” checkbox. Click “Save”, and restart the Windows VM. Resolution should be roughly double.\nAt this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.",
+    "text": "UTM employs Apple’s Hypervisor virtualization framework to run other operating systems on Mac processors at near native speeds. It is a free alternative to virtualization software such as Parallels, with impressive performance.\nThere are three ways to install UTM:\n\nDownload UTM from https://mac.getutm.app. Click the “Download” link. Open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.\nInstall UTM from the Mac App Store. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\nIf you use Homebrew for app management on your Mac, install UTM via homebrew in Terminal: brew install utm.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Intel)"
     ]
   },
   {
-    "objectID": "Installation/mac_intel.html#install-.net-sdk-6.0-x64",
-    "href": "Installation/mac_intel.html#install-.net-sdk-6.0-x64",
+    "objectID": "install/mac_intel.html#download-windows-11-preview-iso",
+    "href": "install/mac_intel.html#download-windows-11-preview-iso",
     "title": "MacOS (Intel)",
-    "section": "Install .NET SDK 6.0 (x64)",
-    "text": "Install .NET SDK 6.0 (x64)\nArcGIS Pro requires .NET SDK 6.0 for x64 processors (not for ARM processors!). Follow these instructions to install the correct .NET SDK.\n\nOpen a browser and navigate to https://dotnet.microsoft.com/en-us/download/dotnet/6.0.\nYou will see a grid of options for installing the .NET SDK. Under the “Installers” column and “Windows” row, click the “x86” link to begin the download.\nNavigate to the downloaded file, and double click to begin the installation process. Follow the instructions in the installer, accepting all defaults.\nRestart the Windows VM.",
+    "section": "Download Windows 11 Preview ISO",
+    "text": "Download Windows 11 Preview ISO\n\nNavigate to https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewiso.\nSign into microsoft.com in the upper right corner of the page using your first.last@umt.edu user ID.\n\nIf you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.\n\nNavigate to https://www.microsoft.com/en-us/windowsinsider/register.\nRead through the notices, and select the “I accept the terms of this agreement” check box.\nClick “Register now”.\nReturn https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewiso to continue.\n\n\nYou should be on a page entitled “Windows Insider Preview Downloads”. Toward the bottom of the page, click the drop down menu and select the “Windows 11 Insider Preview (Release Preview Channel) - Build xxxxx” option. Disregard the build number; these change often. Click “Confirm”.\nA new drop down will appear inviting you to “Select the product language.” Select your language. Click “Confirm”.\nA download link for the Windows ISO should appear. Click “64-bit Download”. The download is large (~6.6 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Intel)"
     ]
   },
   {
-    "objectID": "Installation/mac_intel.html#install-arcgis-pro",
-    "href": "Installation/mac_intel.html#install-arcgis-pro",
+    "objectID": "install/mac_intel.html#install-a-new-virtual-machine-with-windows-11-preview",
+    "href": "install/mac_intel.html#install-a-new-virtual-machine-with-windows-11-preview",
+    "title": "MacOS (Intel)",
+    "section": "Install a New Virtual Machine with Windows 11 Preview",
+    "text": "Install a New Virtual Machine with Windows 11 Preview\n\nOpen UTM.app, and click the + sign at the top of the window to install a new virtual machine.\nSelect “Virtualize”.\nSelect “Windows”\nClick the “Browse…” button, and navigate to the downloaded Windows 11 Preview ISO image that you downloaded above. Click “Continue”.\nSelect the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. Click “Continue”.\nYou may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. Click “Continue”.\nReview the Summary, changing the Windows virtual machine’s name if you’d like, and click “Save”.\nYour new Windows virtual machine should appear in the left column of the UTM window. Click the “play” button (the triangle) to launch the virtual machine. The machine should start up and begin the Windows installation process. When prompted, “press any key to boot from CD or DVD…”; this will start the installer.\nContinue through the process of installing Windows in the virtual machine. You may encounter issues; the guide at https://docs.getutm.app/guides/windows/ may be useful. When prompted to activate windows with a product key, select “I don’t have a product key” at the bottom of the window to continue (or, enter one if you have one on hand). I’ve found activating Windows is unnecessary, at least for the short term.\nOnce Windows starts, click the file explorer, and select the CD drive. Click the “spice-guest-tools” installer, which installs important drivers to run windows on a Mac. Reboot when prompted.\nYou may want to adjust the video settings on your Windows VM. To do so, shut down the Windows VM, and in the UTM app, and then, with the Windows VM selected in the left hand menu, click the button that looks like three sliders in the upper right corner. Navigate down to “Display” and click the “Retina Mode” check box. Click “Save”, and restart the Windows VM. Resolution should be roughly double.\nAt this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.",
+    "crumbs": [
+      "ArcGIS Pro Installation",
+      "MacOS (Intel)"
+    ]
+  },
+  {
+    "objectID": "install/mac_intel.html#install-arcgis-pro",
+    "href": "install/mac_intel.html#install-arcgis-pro",
     "title": "MacOS (Intel)",
     "section": "Install ArcGIS Pro",
-    "text": "Install ArcGIS Pro\nLog in to Windows 11, and follow these instructions:\n\nDownload the ArcGIS Pro installer.\n\nNavigate to https://umontana.maps.arcgis.com and click “Sign In” in the upper right. You will be prompted to sign in with your UM NetID.\nClick your name in the upper right and go to My Settings &gt; Licenses. On the list of product licenses, you’ll see a Download link for ArcGIS Pro. Click it to start the download.\n\nLaunch the downloaded installer, and follow the instructions to install ArcGIS Pro. Additional instructions are available here: https://umtqsg.atlassian.net/wiki/spaces/PUB/pages/1478754305/How+to+install+ArcGIS+Pro\nOnce installed, launch ArcGIS Pro and activate following these instructions: https://umtqsg.atlassian.net/l/c/1X159Wf2",
+    "text": "Install ArcGIS Pro\nContinue your installation from within the new Windows Virtual Machine by following the Windows install instructions.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Intel)"
     ]
   },
   {
-    "objectID": "Installation/mac_apple_silicon.html",
-    "href": "Installation/mac_apple_silicon.html",
+    "objectID": "install/mac_apple_silicon.html",
+    "href": "install/mac_apple_silicon.html",
     "title": "MacOS (Apple Silicon)",
     "section": "",
-    "text": "Download UTM from https://mac.getutm.app, or install it from the Mac App Store at https://apps.apple.com/us/app/utm-virtual-machines/id1538878817. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\n\nIf you install from the direct download, open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.",
+    "text": "UTM employs Apple’s Hypervisor virtualization framework to run other operating systems on Mac processors at near native speeds. It is a free alternative to virtualization software such as Parallels, with impressive performance.\nThere are three ways to install UTM:\n\nDownload UTM from https://mac.getutm.app. Click the “Download” link. Open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.\nInstall UTM from the Mac App Store. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\nIf you use Homebrew for app management on your Mac, install UTM via homebrew in Terminal: brew install utm.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Apple Silicon)"
     ]
   },
   {
-    "objectID": "Installation/mac_apple_silicon.html#install-utm",
-    "href": "Installation/mac_apple_silicon.html#install-utm",
+    "objectID": "install/mac_apple_silicon.html#install-utm",
+    "href": "install/mac_apple_silicon.html#install-utm",
     "title": "MacOS (Apple Silicon)",
     "section": "",
-    "text": "Download UTM from https://mac.getutm.app, or install it from the Mac App Store at https://apps.apple.com/us/app/utm-virtual-machines/id1538878817. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\n\nIf you install from the direct download, open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.",
+    "text": "UTM employs Apple’s Hypervisor virtualization framework to run other operating systems on Mac processors at near native speeds. It is a free alternative to virtualization software such as Parallels, with impressive performance.\nThere are three ways to install UTM:\n\nDownload UTM from https://mac.getutm.app. Click the “Download” link. Open the UTM.dmg disk image file that was downloaded, and drag UTM.app into the Applications folder.\nInstall UTM from the Mac App Store. UTM is free, but if you install it from the Mac App Store, it will cost you $9.99. Benefits of installing from the App store include automatic updates, and you will be supporting the continued development of UTM and the QEMU emulator its built upon.\nIf you use Homebrew for app management on your Mac, install UTM via homebrew in Terminal: brew install utm.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Apple Silicon)"
     ]
   },
   {
-    "objectID": "Installation/mac_apple_silicon.html#download-windows-11-for-arm-preview-vhdx",
-    "href": "Installation/mac_apple_silicon.html#download-windows-11-for-arm-preview-vhdx",
+    "objectID": "install/mac_apple_silicon.html#download-windows-11-for-arm-preview-vhdx",
+    "href": "install/mac_apple_silicon.html#download-windows-11-for-arm-preview-vhdx",
     "title": "MacOS (Apple Silicon)",
     "section": "Download Windows 11 for ARM Preview VHDX",
-    "text": "Download Windows 11 for ARM Preview VHDX\n\nNavigate to https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64.\nSign into microsoft.com in the upper right corner of the page using your first.last@umt.edu user ID.\n\nIf you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.\n\nNavigate to https://www.microsoft.com/en-us/windowsinsider/register.\nRead through the notices, and select the “I accept the terms of this agreement” check box.\nClick “Register now”.\nReturn https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64 to continue.\n\n\nYou should be on a page entitled “Windows Insider Preview Downloads”. Click the dropdown menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. Click “Confirm”.\nA new dropdown will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. Click “Confirm”.\nA download link for the Windows VHDX should appear. Click “Download Now”. The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.",
+    "text": "Download Windows 11 for ARM Preview VHDX\n\nNavigate to https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64.\nSign into microsoft.com in the upper right corner of the page using your first.last@umt.edu user ID.\n\nIf you see, “To access this page, you need to be a member of the Windows Insider program,” you’ll need to sign up for the “Windows Insider” program.\n\nNavigate to https://www.microsoft.com/en-us/windowsinsider/register.\nRead through the notices, and select the “I accept the terms of this agreement” check box.\nClick “Register now”.\nReturn https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64 to continue.\n\n\nYou should be on a page entitled “Windows Insider Preview Downloads”. Click the drop down menu and select the “Windows 11 Client Arm64 Insider Preview (Beta) - Build xxxxx” option. Disregard the build number; these change often. Click “Confirm”.\nA new drop down will appear inviting you to “Select the product language.” English will likely be the only option. Select your language. Click “Confirm”.\nA download link for the Windows VHDX should appear. Click “Download Now”. The download is large (~10 Gb) and will take some time, especially on a wifi connection. Note where the file downloads to.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Apple Silicon)"
     ]
   },
   {
-    "objectID": "Installation/mac_apple_silicon.html#install-a-new-virtual-machine-with-windows-11-for-arm-preview",
-    "href": "Installation/mac_apple_silicon.html#install-a-new-virtual-machine-with-windows-11-for-arm-preview",
+    "objectID": "install/mac_apple_silicon.html#install-a-new-virtual-machine-with-windows-11-for-arm-preview",
+    "href": "install/mac_apple_silicon.html#install-a-new-virtual-machine-with-windows-11-for-arm-preview",
     "title": "MacOS (Apple Silicon)",
     "section": "Install a New Virtual Machine with Windows 11 for ARM Preview",
-    "text": "Install a New Virtual Machine with Windows 11 for ARM Preview\n\nOpen UTM.app, and click the + sign at the top of the window to install a new virtual machine.\nSelect “Virtualize”.\nSelect “Windows”\nSelect the “Import VHDX Image” check box.\nClick the “Browse…” button, and navigate to the downloaded Windows 11 VHDX image. Click “Continue”.\nSelect the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. Click “Continue”.\nYou may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. Click “Continue”.\nReview the Summary, changing the Windows virtual machine’s name if you’d like, and click “Save”.\nYour new Windows virtual machine should appear in the left column of the UTM window. Click the “play” button (the triangle) to launch the virtual machine. The machine should start up and begin the Windows installation process.\nContinue through the process of installing Windows in the virtual machine. You may encounter issues; the guide at https://docs.getutm.app/guides/windows/ may be useful. When installing on an M1 MacBook Pro, we ran into trouble with a network check during install. This can be solved by:\n\nGo to the language select screen (you may need to restart the setup if you are past this screen).\nPress Shift + F10 to launch Command Prompt.\nType in OOBE\\BYPASSNRO and press Enter.\nYour VM should reboot and at the setup screen you should see an option for “I don’t have internet.” Click that, and then “Continue with limited setup,” and you should be able to continue with the installation.\n\nOnce Windows starts, click the file explorer, and select the CD drive. Click the “spice-guest-tools” installer, which installs important drivers to run windows on a Mac. Reboot when prompted.\nYou may want to adjust the video settings on your Windows VM. To do so, shut down the Windows VM, and in the UTM app, and then, with the Windows VM selected in the left hand menu, click the button that looks like three sliders in the upper right corner. Navigate down to “Display” and click the “Retina Mode” checkbox. Click “Save”, and restart the Windows VM. Resolution should be roughly double.\nAt this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.",
+    "text": "Install a New Virtual Machine with Windows 11 for ARM Preview\n\nOpen UTM.app, and click the + sign at the top of the window to install a new virtual machine.\nSelect “Virtualize”.\nSelect “Windows”\nSelect the “Import VHDX Image” check box.\nClick the “Browse…” button, and navigate to the downloaded Windows 11 VHDX image. Click “Continue”.\nSelect the amount of memory and number of CPU cores for the Windows virtual machine. You can accept the default values, or increase the memory and CPU cores to your liking. It is advisable to not use more than half of your computer’s total memory or number of cores. Click “Continue”.\nYou may specify a shared directory that will be mapped to the Windows virtual machine from your local machine. This is optional. Click “Continue”.\nReview the Summary, changing the Windows virtual machine’s name if you’d like, and click “Save”.\nYour new Windows virtual machine should appear in the left column of the UTM window. Click the “play” button (the triangle) to launch the virtual machine. The machine should start up and begin the Windows installation process.\nContinue through the process of installing Windows in the virtual machine. You may encounter issues; the guide at https://docs.getutm.app/guides/windows/ may be useful. When installing on an M1 MacBook Pro, we ran into trouble with a network check during install. This can be solved by:\n\nGo to the language select screen (you may need to restart the setup if you are past this screen).\nPress Shift + F10 to launch Command Prompt.\nType in OOBE\\BYPASSNRO and press Enter.\nYour VM should reboot and at the setup screen you should see an option for “I don’t have internet.” Click that, and then “Continue with limited setup,” and you should be able to continue with the installation.\n\nOnce Windows starts, click the file explorer, and select the CD drive. Click the “spice-guest-tools” installer, which installs important drivers to run windows on a Mac. Reboot when prompted.\nYou may want to adjust the video settings on your Windows VM. To do so, shut down the Windows VM, and in the UTM app, and then, with the Windows VM selected in the left hand menu, click the button that looks like three sliders in the upper right corner. Navigate down to “Display” and click the “Retina Mode” check box. Click “Save”, and restart the Windows VM. Resolution should be roughly double.\nAt this point, it is good to install any updates to Windows that are available. Click the Start menu and search for “Settings”; go to Settings. Towards the top of the Settings window you should see a “Windows Update” button. Check for updates, and install any that are available.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Apple Silicon)"
     ]
   },
   {
-    "objectID": "Installation/mac_apple_silicon.html#install-arcgis-pro",
-    "href": "Installation/mac_apple_silicon.html#install-arcgis-pro",
+    "objectID": "install/mac_apple_silicon.html#install-arcgis-pro",
+    "href": "install/mac_apple_silicon.html#install-arcgis-pro",
     "title": "MacOS (Apple Silicon)",
     "section": "Install ArcGIS Pro",
     "text": "Install ArcGIS Pro\nContinue your installation from within the new Windows Virtual Machine by following the Windows install instructions.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "MacOS (Apple Silicon)"
     ]
   },
   {
-    "objectID": "Installation/windows.html",
-    "href": "Installation/windows.html",
+    "objectID": "install/windows.html",
+    "href": "install/windows.html",
     "title": "Windows",
     "section": "",
     "text": "Check that you computer meets the minimum system requirements. If you followed the instructions for setting up Windows using UTM in either MacOS (Apple Silicon or Intel), you should be good to go. Be sure you are working within your Windows virtual machine for the following steps.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "Windows"
     ]
   },
   {
-    "objectID": "Installation/windows.html#before-you-install",
-    "href": "Installation/windows.html#before-you-install",
+    "objectID": "install/windows.html#before-you-install",
+    "href": "install/windows.html#before-you-install",
     "title": "Windows",
     "section": "",
     "text": "Check that you computer meets the minimum system requirements. If you followed the instructions for setting up Windows using UTM in either MacOS (Apple Silicon or Intel), you should be good to go. Be sure you are working within your Windows virtual machine for the following steps.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "Windows"
     ]
   },
   {
-    "objectID": "Installation/windows.html#install-.net-sdk-6.0-x64",
-    "href": "Installation/windows.html#install-.net-sdk-6.0-x64",
+    "objectID": "install/windows.html#install-.net-sdk-6.0-x64",
+    "href": "install/windows.html#install-.net-sdk-6.0-x64",
     "title": "Windows",
     "section": "Install .NET SDK 6.0 (x64)",
-    "text": "Install .NET SDK 6.0 (x64)\nArcGIS Pro requires .NET SDK 6.0 for x64 processors. The presence of Microsoft .NET Desktop Runtime 7 or for any other architecture is inconsequential.\nFollow these instructions to install the correct .NET SDK.\n\nOpen a browser and navigate to https://dotnet.microsoft.com/en-us/download/dotnet/6.0.\nYou will see a grid of options for installing the .NET SDK. Under the “Installers” column and “Windows” row, click the “x64” link to begin the download.\nNavigate to the downloaded file, and double click to begin the installation process. Follow the instructions in the installer, accepting all defaults.\nRestart the Windows VM.",
+    "text": "Install .NET SDK 6.0 (x64)\nArcGIS Pro requires .NET SDK 6.0 for x64 processors. The presence of Microsoft .NET Desktop Runtime 7 or for any other architecture is inconsequential.\nFollow these instructions to install the correct .NET SDK.\n\nOpen a browser and navigate to https://dotnet.microsoft.com/en-us/download/dotnet/6.0.\nYou will see a grid of options for installing the .NET SDK. Under the “Installers” column and “Windows” row, click the “x64” link to begin the download.\n\n\nNavigate to the downloaded file, and double click to begin the installation process. Follow the instructions in the installer, accepting all defaults.\nRestart the Windows VM.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "Windows"
     ]
   },
   {
-    "objectID": "Installation/windows.html#install-arcgis-pro",
-    "href": "Installation/windows.html#install-arcgis-pro",
+    "objectID": "install/windows.html#install-arcgis-pro",
+    "href": "install/windows.html#install-arcgis-pro",
     "title": "Windows",
     "section": "Install ArcGIS Pro",
-    "text": "Install ArcGIS Pro\n\nDownload the ArcGIS Pro installer.\n\nNavigate to https://umontana.maps.arcgis.com and click “Sign In” in the upper right. You will be prompted to sign in with your UM NetID.\nClick your name in the upper right and go to My Settings &gt; Licenses. On the list of product licenses, you’ll see a Download link for ArcGIS Pro. Click it to start the download.\n\nLaunch the downloaded installer, and follow the on-screen instructions to install ArcGIS Pro.",
+    "text": "Install ArcGIS Pro\n\nDownload the ArcGIS Pro installer.\n\nNavigate to https://umontana.maps.arcgis.com and click “Sign In” in the upper right. You will be prompted to sign in with your UM NetID.\nClick your name in the upper right and go to My Settings &gt; Licenses. On the list of product licenses, you’ll see a Download link for ArcGIS Pro. Click it to start the download.\n\n\n\nLaunch the downloaded installer, and follow the on-screen instructions to install ArcGIS Pro.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "Windows"
     ]
   },
   {
-    "objectID": "Installation/windows.html#activate-arcgis-pro",
-    "href": "Installation/windows.html#activate-arcgis-pro",
+    "objectID": "install/windows.html#activate-arcgis-pro",
+    "href": "install/windows.html#activate-arcgis-pro",
     "title": "Windows",
     "section": "Activate ArcGIS Pro",
-    "text": "Activate ArcGIS Pro\n\nLaunch ArcGIS Pro\n\n\n\nAt the sign on page, click Your Organization’s URL\nIn the empty field, enter umontana so the URL completes to umontana.maps.arcgis.com\n\nDO NOT ENTER anything other than “umontana”\n\nClick Continue, then click the UM NetID button.\nSign in with your NetID and password at the UM NetID SSO page",
+    "text": "Activate ArcGIS Pro\n\nLaunch ArcGIS Pro\nAt the sign on page, click Your Organization’s URL\nIn the empty field, enter umontana so the URL completes to umontana.maps.arcgis.com.\nDo not enter anything other than “umontana”. Anything else simply won’t work.\nClick Continue, then click the UM NetID button.\nSign in with your NetID and password at the UM NetID SSO page. Activation should happen automatically.",
     "crumbs": [
-      "Installation",
+      "ArcGIS Pro Installation",
       "Windows"
     ]
   }
